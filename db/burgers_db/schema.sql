@@ -17,23 +17,14 @@ CREATE TABLE users (
 CREATE TABLE burgers (
   burger_id INT NOT NULL AUTO_INCREMENT,
   burger_name VARCHAR(100) NOT NULL,
-  ingredient_1 INT NULL,
-  ingredient_2 INT NULL,
-  ingredient_3 INT NULL,
-  ingredient_4 INT NULL,
-  ingredient_5 INT NULL,
+  ingredient_1 VARCHAR(100) NULL,
+  ingredient_2 VARCHAR(100) NULL,
+  ingredient_3 VARCHAR(100) NULL,
+  ingredient_4 VARCHAR(100) NULL,
+  ingredient_5 VARCHAR(100) NULL,
   burger_picture VARCHAR(1000) NULL,
   user_id INT NULL,
-  devoured BOOLEAN DEFAULT 0,
+  devoured BOOLEAN DEFAULT false,
   PRIMARY KEY (burger_id)
-);
-
--- INGREDIENTS	
-CREATE TABLE ingredients (
-  ingredient_id INT NOT NULL AUTO_INCREMENT,
-  ingredient_name VARCHAR(100) NULL,
-  ingredient_Picture VARCHAR(100) NULL,
-  ingredient_calories INT NULL,
-  PRIMARY KEY (ingredient_id)
 );
 
