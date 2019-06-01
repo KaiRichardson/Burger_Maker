@@ -1,38 +1,46 @@
-<h1>Cats!</h1>
+<h1>burgers!</h1>
 
-<h2>Cats that are not sleepy!</h2>
+<h2>burgers that are not devoured!</h2>
 
 <ul>
-  {{#each cats}}
-    {{#unless sleepy}}
-      {{> cats/cat-block sleep=true}}
+  {{#each burgers}}
+    {{#unless devoured}}
+      {{> burgers/burger-block devoured=true}}
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Cats that are sleepy!</h2>
+<h2>burgers that are devoured!</h2>
 
 <ul>
-  {{#each cats}}
-    {{#if sleepy}}
-      {{> cats/cat-block sleep=false}}
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> burgers/burger-block devoured=false}}
     {{/if}}
   {{/each}}
 </ul>
 
-<h2>Add a Cat</h2>
+<h2>Add a burger</h2>
 <form class="create-form">
 
   <div class="form-group">
-    <label for="ca">Cat Name:</label>
-    <input type="text" id="ca" name="name">
+    <label for="br">Burger Name: </label>
+    <input type="text" id="br" name="burger_name" required>
   </div>
 
   <div class="form-group">
-    <label for="slee">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
+    <label for="bur">Toppings:</label><br>
+    <input type="checkbox" name="ingredient_1" value="3"> Bacon<br>
+    <input type="checkbox" name="ingredient_2" value="4"> Cheese<br>
+    <input type="checkbox" name="ingredient_3" value="6"> Lettuce<br>
+    <input type="checkbox" name="ingredient_4" value="7"> Onion<br>
+    <input type="checkbox" name="ingredient_5" value="9"> Pickles<br>
   </div>
 
-  <button type="submit">Add Cat</button>
+  <div class="form-group">
+    <label for="bp">Burger Picture URL: </label><br>
+    <input type="url" id="bp" name="burger_picture" required>
+  </div>
+
+  <button type="submit">Add burger</button>
 </form>
