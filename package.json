@@ -1,19 +1,29 @@
 {
-  "name": "mvc_design",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.3",
-    "express-handlebars": "^3.0.0",
-    "mysql": "^2.16.0"
-  },
-  "devDependencies": {
-    "handlebars-helper-css": "^0.1.0"
-  }
+    "name": "Burger_Maker",
+    "version": "1.0.0",
+    "description": "In this assignment, you'll create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.",
+    "main": "server.js",
+    "dependencies": {
+        "express": "^4.16.3",
+        "express-handlebars": "^3.0.0",
+        "mysql": "^2.16.0"
+    },
+    "devDependencies": {
+        "handlebars-helper-css": "^0.1.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/KaiRichardson/Burger_Maker.git"
+    },
+    "keywords": [],
+    "author": "Kai Richardson",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/KaiRichardson/Burger_Maker/issues"
+    },
+    "homepage": "https://github.com/KaiRichardson/Burger_Maker#readme"
 }
